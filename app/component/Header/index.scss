@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: #fff;
+    // background: var(--bg-color);
+
+    .header__left {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .header__center {}
+
+    .header__right {
+        display: flex;
+
+        div {
+            padding: 10px;
+            font-weight: 500;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    }
+}
