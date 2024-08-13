@@ -5,10 +5,13 @@ import 'react-pdf/dist/esm/Page/TextLayer.css';
 import './index.scss';
 import { PDFDocument, degrees } from 'pdf-lib';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.mjs',
-    import.meta.url,
-).toString();
+// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+//     'pdfjs-dist/build/pdf.worker.min.mjs',
+//     import.meta.url,
+// ).toString();
+
+// pdfjs.GlobalWorkerOptions.workerSrc = '/public/pdf.worker.js';
+pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.js';
 
 const options = {
     cMapUrl: '/cmaps/',
