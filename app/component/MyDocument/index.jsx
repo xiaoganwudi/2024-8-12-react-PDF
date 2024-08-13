@@ -10,8 +10,7 @@ import { PDFDocument, degrees } from 'pdf-lib';
 //     import.meta.url,
 // ).toString();
 
-// pdfjs.GlobalWorkerOptions.workerSrc = '/public/pdf.worker.js';
-pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.js';
+pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 
 const options = {
     cMapUrl: '/cmaps/',
